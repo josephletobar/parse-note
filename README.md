@@ -3,6 +3,14 @@
 
 ParseNote is an AI-powered learning tool that transforms large-scale, unstructured technical content—such as lecture transcripts or textbook excerpts—into semantically structured, high-quality documentation. The system uses large language models (LLMs), embedding-based similarity, and retrieval-augmented generation (RAG) to produce a distilled version of the content alongside a logically ordered outline. This distillation preserves core ideas while enhancing structure and clarity, forming the foundation for generating organized documentation and enabling intelligent retrieval through embeddings.
 
+## Technologies Used
+
+* **OpenAI GPT-4:** For outline generation and structured HTML note synthesis
+* **OpenAI text-embedding-3-small:** For embedding and semantic similarity scoring
+* **Flask + Flask-SocketIO:** For local web-based document processing and interaction
+* **Pandas, NumPy:** For data handling, transformation, and CSV/PKL serialization
+* **Prompt Engineering:** For controlling GPT output format and semantic consistency
+
 ## How It Works
 
 ### 1. Large, Unstructured Input  
@@ -63,13 +71,6 @@ A built-in chat interface enables users to query the document:
 
 A Flask server will start and open in your browser. Upload your raw content—this can include text files, lecture transcripts, PDFs, or images—and the system will automatically generate a semantic outline, organize the material, and return structured documentation ready for retrieval, analysis, or integration.
 
-## Technologies Used
-
-* **OpenAI GPT-4:** For outline generation and structured HTML note synthesis
-* **OpenAI text-embedding-3-small:** For embedding and semantic similarity scoring
-* **Flask + Flask-SocketIO:** For local web-based document processing and interaction
-* **Pandas, NumPy:** For data handling, transformation, and CSV/PKL serialization
-* **Prompt Engineering:** For controlling GPT output format and semantic consistency
 
 ## Planned Development
 
