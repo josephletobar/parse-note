@@ -17,3 +17,5 @@ PyMuPDF
 vosk
 markdown
 pdf2image
+celery
+redis
